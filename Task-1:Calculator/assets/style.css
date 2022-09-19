@@ -1,0 +1,143 @@
+body {
+    font-size: 2.5vh;
+    top: 15%;
+    left: 40%; 
+    margin: 0 auto;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.animate-charcter
+{margin-left:25%;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+h1 {
+    color: white;
+    text-align: center;
+transform: 5s transition;
+    
+}
+h1:hover{
+   color:indianred;
+
+}
+
+#calculator {margin-top: 20px;
+    width: auto;
+    height: auto;
+    padding: 3vh;
+    
+    border-radius: 15px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 5px solid red;
+    animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  40% {border-color: greenyellow;}
+ 
+}
+
+.box {
+    text-align:right;
+    font-size: 2.8vh;
+    height: 3vh;
+    line-height: 3vh;
+    padding: 1em;
+    
+    color: white;
+    border-radius: 15px;
+    background-color: black; 
+    border: 2px solid red;
+    animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  40% {border-color: greenyellow;}
+}
+
+#last_operation_history {
+    height: 1.8vh;
+    font-size: 1.8vh;
+    text-align:right;
+    padding-right: 1.5vh;
+    color: rgb(177, 176, 176);
+    background-color: black;
+}
+
+button {
+    width:9vh;
+    height: 9vh;
+    font-weight:bold;
+    font-size: 3vh;
+    color: white;
+    background-color: #666666;
+    border-radius: 50%;
+    border: 1px solid #333333;
+}
+
+#backspace_btn {
+    background-image: url("../assets/style.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1.7em;
+}
+
+button:hover {
+    background-color: #999999;
+}
+
+.operator {
+    background-color: red;
+}
+
+.operator:hover {
+    background-color: #ffd11a;
+}
+
+#equal_sign {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+a:link {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
